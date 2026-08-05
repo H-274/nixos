@@ -19,6 +19,9 @@
         device = "d7a0b13e-e635-42f7-b375-d69cd8f9034f";
       }
     ];
+
+    nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+    virtualisation.virtualbox.guest.enable = true;
   };
 
 }
