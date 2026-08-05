@@ -7,8 +7,9 @@
       # Users
       self.nixosModules.coloursUser
 
-      # Theming
+      # Desktop
       self.nixosModules.catppuccin
+      self.nixosModules.niri
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -38,7 +39,7 @@
 
     # Enable Plasma KDE
     services.displayManager.sddm.enable = true;
-    services.desktopManager.plasma6.enable = true;
+    # services.desktopManager.plasma6.enable = true;
 
     # Console keymap
     console.keyMap = "cf";
