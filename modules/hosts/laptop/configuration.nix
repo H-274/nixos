@@ -8,7 +8,7 @@
       self.nixosModules.coloursUser
 
       # Theming
-      self.nixosModule.catppuccin
+      self.nixosModules.catppuccin
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
