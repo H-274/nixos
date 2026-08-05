@@ -1,8 +1,8 @@
-{ self, inputs, ... }: {
+{ self, inputs, catppuccin, ... }: {
   flake.nixosConfigurations.main = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       self.nixosModules.mainConfig
-      self.nixosModules.catppuccin
+      catppuccin.nixosModules.catppuccin
     ];
   };
 }
