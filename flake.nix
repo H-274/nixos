@@ -8,7 +8,7 @@
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release";
+      url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
