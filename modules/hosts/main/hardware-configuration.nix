@@ -7,7 +7,7 @@
     boot.initrd.availableKernelModules = [ "ata_piix" "ohci_pci" "ehci_pci" "ahci" "sd_mod" "sr_mod" ];
     boot.initrd.kernelModules = [ ];
     boot.kernelModules = [ ];
-    boot.extraModulePackages = [ ];`
+    boot.extraModulePackages = [ ];
 
     fileSystems."/" = {
       device = "/dev/disk/by-uuid/53bd6388-324a-4418-b30f-e5e868b20ab1";
