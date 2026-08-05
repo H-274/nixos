@@ -2,7 +2,6 @@
   flake.nixosModules.mainConfig = { pkgs, lib, ... }: {
     imports = [
       self.nixosModules.mainHardware
-      self.nixosModules.niri
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
