@@ -2,6 +2,8 @@
   flake.nixosModules.mainConfig = { pkgs, lib, ... }: {
     imports = [
       self.nixosModules.mainHardware
+
+      self.nixosModules.coloursUser
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -50,14 +52,14 @@
     };
 
     # Defining user account
-    users.users."colours" = {
-      isNormalUser = true;
-      description = "colours";
-      extraGroups = [ "networkmanager" "wheel" ];
-      packages = with pkgs; [
-        kdePackages.kate
-      ];
-    };
+    #users.users."colours" = {
+    #  isNormalUser = true;
+    #  description = "colours";
+    #  extraGroups = [ "networkmanager" "wheel" ];
+    #  packages = with pkgs; [
+    #    kdePackages.kate
+    #  ];
+    #};
 
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
