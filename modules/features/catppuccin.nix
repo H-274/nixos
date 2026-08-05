@@ -1,10 +1,12 @@
-{
-  flake.nixosModules.catppuccin = { inputs, ... }: {
+{ self, inputs, ... }: {
+  flake.nixosModules.catppuccin = {
     imports = [
       inputs.catppuccin.nixosModules.catppuccin
     ];
 
-    catppuccin.enable = true;
-    catppuccin.flavor = "mocha";
+    catppuccin = {
+      enable = true;
+      flavor = "mocha";
+    };
   };
 }
