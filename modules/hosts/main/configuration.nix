@@ -67,6 +67,7 @@
     environment.systemPackages = with pkgs; [
       vim
       wget
+      git
     ];
 
     system.stateVersion = "26.05";
