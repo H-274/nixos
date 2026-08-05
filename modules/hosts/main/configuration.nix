@@ -3,6 +3,7 @@
     imports = [
       self.nixosModules.mainHardware
 
+      self.nixosModule.catppuccin
       self.nixosModules.coloursUser
     ];
 
