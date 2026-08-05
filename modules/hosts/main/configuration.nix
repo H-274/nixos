@@ -1,10 +1,14 @@
 { self, inputs, ... }: {
   flake.nixosModules.mainConfig = { pkgs, lib, ... }: {
     imports = [
+      # Hardware config
       self.nixosModules.mainHardware
 
-      self.nixosModule.catppuccin
+      # Users
       self.nixosModules.coloursUser
+
+      # Theming
+      self.nixosModule.catppuccin
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -51,16 +55,6 @@
       alsa.support32Bit = true;
       pulse.enable = true;
     };
-
-    # Defining user account
-    #users.users."colours" = {
-    #  isNormalUser = true;
-    #  description = "colours";
-    #  extraGroups = [ "networkmanager" "wheel" ];
-    #  packages = with pkgs; [
-    #    kdePackages.kate
-    #  ];
-    #};
 
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
