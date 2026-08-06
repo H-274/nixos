@@ -3,7 +3,7 @@
     inputs.hyprland.nixosModules.default
   ];
 
-  flake.nixosModules.hyprland = {
+  flake.nixosModules.hyprland = { pkgs, ... }: {
     environment.systemPackages = [
       pkgs.kitty # required for the default Hyprland config
     ];
