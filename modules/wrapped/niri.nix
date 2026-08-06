@@ -6,11 +6,14 @@
     };
   };
 
-  perSystem = { pkgs, lib, ... }: {
+  perSystem = { pkgs, lib, self' ... }: {
     packages.niri = inputs.wrapper-modules.wrappers.niri.wrap {
 
       inherit pkgs;
       settings = {
+        spawn-at-startup = [
+          (lib.getExe self'.packages.noctalia)
+        ];
         input.keyboard = {
           xkb.layout = "ca";
         };
