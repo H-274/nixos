@@ -19,12 +19,6 @@
         };
         
         layout.gaps = 5;
-
-        binds = {
-          "Alt+Return".spawn-sh = lib.getExe pkgs.kitty;
-          "Alt+Q".close-window = { };
-          "Alt+S".spawn-sh = "${lib.getExe self'.packages.noctalia} ipc call launcher toggle";
-        };
       };
     };
   };

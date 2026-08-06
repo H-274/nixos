@@ -37,9 +37,8 @@
       variant = "";
     };
 
-    # Enable Plasma KDE
+    # Enable display manager
     services.displayManager.sddm.enable = true;
-    # services.desktopManager.plasma6.enable = true;
 
     # Console keymap
     console.keyMap = "cf";
