@@ -1,6 +1,8 @@
 { self, inputs, ... }: {
   flake.nixosModules.mainConfig = { pkgs, lib, ... }: {
     imports = [
+      self.nixosModules.base
+
       # Hardware config
       self.nixosModules.mainHardware
 
