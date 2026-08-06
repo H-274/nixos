@@ -9,7 +9,7 @@
 
       # Desktop
       self.nixosModules.catppuccin
-      self.nixosModules.niri
+      self.nixosModules.hyprland
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -30,7 +30,7 @@
     # I18N
     i18n.defaultLocale = "en_GB.UTF-8";
 
-    # X11 window system
+    # Window system
     services.xserver.enable = true;
     services.xserver.xkb = {
       layout = "ca";
@@ -64,7 +64,6 @@
       vim
       wget
       git
-      kitty
     ];
 
     system.stateVersion = "26.05";
