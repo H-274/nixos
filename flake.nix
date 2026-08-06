@@ -9,7 +9,7 @@
 
     catppuccin.url = "github:catppuccin/nix";
 
-    inputs.hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake
