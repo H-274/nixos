@@ -11,7 +11,7 @@
 
       # Theming
       self.nixosModules.catppuccin
-      self.nixosModules.niri
+      self.nixosModules.hyprland
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
