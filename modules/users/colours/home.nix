@@ -5,7 +5,6 @@
       self.nixosModules.home-manager
     ];
 
-    inherit home-manager;
     home-manager.users.colours = {
       home.packages = [ ];
       wayland.windowManager.hyprland.enable = true; # enable Hyprland
