@@ -5,22 +5,20 @@
       self.nixosModules.home-manager
     ];
 
-    let home-manager = self.nixosModules.home-manager;
-    in {
-      home-manager.users.colours = {
-        home.packages = [ ];
-        wayland.windowManager.hyprland.enable = true; # enable Hyprland
+    inherit home-manager;
+    home-manager.users.colours = {
+      home.packages = [ ];
+      wayland.windowManager.hyprland.enable = true; # enable Hyprland
 
-        programs = {
-          home-manager.enable = true;
-          git.enable = true;
-          github-cli.enable = true;
-          firefox.enable = true;
-          kitty.enable = true; # required for the default Hyprland config
-        };
-
-        home.stateVersion = "26.05";
+      programs = {
+        home-manager.enable = true;
+        git.enable = true;
+        github-cli.enable = true;
+        firefox.enable = true;
+        kitty.enable = true; # required for the default Hyprland config
       };
-    }
+
+      home.stateVersion = "26.05";
+    };
   };
 }
