@@ -2,10 +2,10 @@
   flake.nixosModules.coloursHome = { ... }: {
     imports = [
       self.nixosModules.coloursUser
-      self.nixosModules.home-manager
+      inputs.home-manager.nixosModules.home-manager
     ];
 
-    home-manager.users.colours = {
+    self.home-manager.users.colours = {
       home.packages = [ ];
       wayland.windowManager.hyprland.enable = true; # enable Hyprland
 
