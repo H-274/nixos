@@ -330,14 +330,14 @@
       "favorites": [
         {
           "appearance": "dark",
-          "colorScheme": "Tokyo Night",
+          "colorScheme": "Catppuccin",
           "darkMode": true,
           "generationMethod": "tonal-spot",
           "paletteColors": [
-            "#7aa2f7",
-            "#bb9af7",
-            "#9ece6a",
-            "#f7768e"
+            "#cba6f7",
+            "#fab387",
+            "#94e2d5",
+            "#f38ba8"
           ],
           "path": "/home/colours/wallpapers/os-x-mountain-lion.jpg",
           "useWallpaperColors": false
@@ -629,7 +629,7 @@
     },
     "colorSchemes": {
       "useWallpaperColors": false,
-      "predefinedScheme": "Tokyo Night",
+      "predefinedScheme": "Catppuccin",
       "darkMode": true,
       "schedulingMode": "manual",
       "manualSunrise": "06:30",
