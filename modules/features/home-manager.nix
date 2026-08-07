@@ -1,10 +1,10 @@
 { self, inputs, ... }: {
-  flake.nixosModules.home-manager = { pkgs, self', ... }: {
+  flake.nixosModules.home-manager = { self, ... }: {
     imports = [
       inputs.home-manager.nixosModules.home-manager
     ];
 
-    pkgs.home-manager = {
+    self.home-manager = {
       useGlobalPkgs = true;
       useUserPackages = true;
       extraSpecialArgs = { inherit inputs; };
