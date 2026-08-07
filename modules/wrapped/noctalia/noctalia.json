@@ -290,7 +290,7 @@
     "wallpaper": {
       "enabled": true,
       "overviewEnabled": true,
-      "directory": "/home/colours/Pictures/Wallpapers",
+      "directory": "~/wallpapers",
       "monitorDirectories": [],
       "enableMultiMonitorDirectories": false,
       "showHiddenFiles": false,
@@ -327,7 +327,22 @@
       "wallhavenResolutionWidth": "",
       "wallhavenResolutionHeight": "",
       "sortOrder": "name",
-      "favorites": []
+      "favorites": [
+        {
+          "appearance": "dark",
+          "colorScheme": "Tokyo Night",
+          "darkMode": true,
+          "generationMethod": "tonal-spot",
+          "paletteColors": [
+            "#7aa2f7",
+            "#bb9af7",
+            "#9ece6a",
+            "#f7768e"
+          ],
+          "path": "/home/colours/wallpapers/os-x-mountain-lion.jpg",
+          "useWallpaperColors": false
+        }
+      ]
     },
     "appLauncher": {
       "enableClipboardHistory": false,
@@ -614,7 +629,7 @@
     },
     "colorSchemes": {
       "useWallpaperColors": false,
-      "predefinedScheme": "Catppuccin",
+      "predefinedScheme": "Tokyo Night",
       "darkMode": true,
       "schedulingMode": "manual",
       "manualSunrise": "06:30",
@@ -686,7 +701,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/nix/store/wzkya4vhy6wf7w8hx050f107msvcddwl-noctalia-shell-4.7.7/share/noctalia-shell/Assets/Wallpaper/noctalia.png"
+      "eDP-1": "/home/colours/wallpapers/os-x-mountain-lion.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
