@@ -1,4 +1,4 @@
-{ self, inputs, ... }: {
+{
   flake.nixosModules.coloursHome = { self, ... }: {
     imports = [
       self.nixosModules.coloursUser
