@@ -81,22 +81,6 @@
             "showText": false,
             "textColor": "none",
             "useFixedWidth": false
-          },
-          {
-            "compactMode": false,
-            "hideMode": "hidden",
-            "hideWhenIdle": false,
-            "id": "MediaMini",
-            "maxWidth": 145,
-            "panelShowAlbumArt": true,
-            "scrollingMode": "hover",
-            "showAlbumArt": true,
-            "showArtistFirst": true,
-            "showProgressRing": true,
-            "showVisualizer": false,
-            "textColor": "none",
-            "useFixedWidth": false,
-            "visualizerType": "linear"
           }
         ],
         "center": [
@@ -123,6 +107,12 @@
           }
         ],
         "right": [
+          {
+            "colorName": "primary",
+            "hideWhenIdle": true,
+            "id": "AudioVisualizer",
+            "width": 200
+          },
           {
             "blacklist": [],
             "chevronColor": "none",
@@ -238,7 +228,7 @@
           "Del"
         ]
       },
-      "reverseScroll": true,
+      "reverseScroll": false,
       "smoothScrollEnabled": true
     },
     "ui": {
@@ -257,7 +247,7 @@
     },
     "location": {
       "name": "",
-      "weatherEnabled": true,
+      "weatherEnabled": false,
       "weatherShowEffects": true,
       "weatherTaliaMascotAlways": false,
       "useFahrenheit": false,
@@ -282,7 +272,7 @@
           "id": "calendar-month-card"
         },
         {
-          "enabled": true,
+          "enabled": false,
           "id": "weather-card"
         }
       ]
@@ -707,18 +697,15 @@
     "display": {
       "eDP-1": {
         "name": "eDP-1",
-        "connected": true,
-        "scale": 1.25,
-        "width": 1536,
-        "height": 864,
+        "scale": 1.5,
+        "width": 1920,
+        "height": 1080,
+        "refresh_rate": 59.934,
         "x": 0,
         "y": 0,
-        "physical_width": 290,
-        "physical_height": 170,
-        "refresh_rate": 59934,
-        "vrr_supported": false,
-        "vrr_enabled": false,
-        "transform": "Normal"
+        "active_workspace": 1,
+        "vrr": false,
+        "focused": true
       }
     },
     "notificationsState": {
