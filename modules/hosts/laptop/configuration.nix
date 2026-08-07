@@ -7,7 +7,8 @@
       self.nixosModules.laptopHardware
 
       # Users
-      self.nixosModules.coloursUser
+      self.nixosModules.home-manager
+      self.nixosModules.coloursHome
 
       # Theming
       self.nixosModules.catppuccin
@@ -46,16 +47,15 @@
     };
 
     # X11 window system
-    services.xserver.enable = true;
     services.xserver.xkb = {
       layout = "ca";
       variant = "";
     };
 
     # Desktop environment
-    services.xserver.displayManager.gdm.enable = true;
-    services.xserver.desktopManager.gnome.enable = true;
-    services.xserver.libinput.enable = true;
+    services.displayManager.sddm.enable = true;
+    services.displayManager.sddm.wayland.enable = true;
+    services.libinput.enable = true;
 
     # Console keymap
     console.keyMap = "cf";
@@ -78,11 +78,8 @@
 
     # System packages
     environment.systemPackages = with pkgs; [
-      vim
-      wget
       git
       github-cli
-      firefox
       kitty
     ];
 
