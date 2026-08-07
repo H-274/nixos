@@ -82,6 +82,7 @@
       wget
       git
       github-cli
+      firefox
     ];
 
     system.stateVersion = "26.05";
