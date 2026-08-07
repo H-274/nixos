@@ -83,6 +83,7 @@
       git
       github-cli
       firefox
+      kitty
     ];
 
     system.stateVersion = "26.05";
