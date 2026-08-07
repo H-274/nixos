@@ -1,7 +1,7 @@
 { self, ... }: {
   flake.nixosModules.coloursHome = { home-manager, ... }: {
     imports = [
-      flake.nixosModules.coloursUser
+      self.nixosModules.coloursUser
     ];
 
     home-manager.users.colours = {
