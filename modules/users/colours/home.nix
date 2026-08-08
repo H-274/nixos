@@ -4,7 +4,7 @@
       self.nixosModules.coloursUser
     ];
 
-    home-manager.users.colours = lib.mkOption {
+    home-manager.users.colours = {
       home.packages = [ ];
       wayland.windowManager.hyprland.enable = true; # enable Hyprland
 
