@@ -7,5 +7,5 @@ let userConfig =  {
   };
 }; in {
   flake.nixosModules.coloursUser = userConfig;
-  userConfig;
+  { userConfig; };
 }
