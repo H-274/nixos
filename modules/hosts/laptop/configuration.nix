@@ -8,7 +8,7 @@
 
       # Users
       self.nixosModules.home-manager
-      self.nixosModules.coloursUser
+      self.nixosModules.coloursHome
 
       # Theming
       self.nixosModules.catppuccin
