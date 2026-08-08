@@ -4,12 +4,12 @@
       self.nixosModules.coloursUser
     ];
 
-    self.home-manager.users.colours = {
+    home-manager.users.colours = {
       home.packages = [ ];
       wayland.windowManager.hyprland.enable = true; # enable Hyprland
 
       programs = {
-        home-manager.enable = true;
+        "home-manager".enable = true;
         git.enable = true;
         github-cli.enable = true;
         firefox.enable = true;
