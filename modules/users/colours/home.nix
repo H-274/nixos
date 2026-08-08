@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.coloursHome = { self, lib, ... }: {
+  flake.nixosModules.coloursHome = { ... }: {
     imports = [
       self.nixosModules.coloursUser
     ];
@@ -9,7 +9,7 @@
       wayland.windowManager.hyprland.enable = true; # enable Hyprland
 
       programs = {
-        "home-manager".enable = true;
+        home-manager.enable = true;
         git.enable = true;
         github-cli.enable = true;
         firefox.enable = true;
