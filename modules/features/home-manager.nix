@@ -4,7 +4,7 @@
       inputs.home-manager.nixosModules.home-manager
     ];
 
-    self.home-manager = {
+    home-manager = {
       useGlobalPkgs = true;
       useUserPackages = true;
       extraSpecialArgs = { inherit inputs; };
