@@ -5,7 +5,7 @@ let userConfig =  {
     initialPassword = "12345";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-} in {
+}; in {
   flake.nixosModules.coloursUser = userConfig;
   userConfig;
 }
