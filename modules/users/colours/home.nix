@@ -1,6 +1,6 @@
 {
   flake.nixosModules.coloursHome = { self, ... }: {
-    
+
     home-manager.users.colours = {
       home.packages = [ ];
       wayland.windowManager.hyprland.enable = true; # enable Hyprland
@@ -8,7 +8,7 @@
       programs = {
         home-manager.enable = true;
         git.enable = true;
-        github-cli.enable = true;
+        gh.enable = true;
         firefox.enable = true;
         kitty.enable = true; # required for the default Hyprland config
       };
