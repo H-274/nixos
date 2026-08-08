@@ -1,5 +1,5 @@
-{ self, ... }: {
-  flake.nixosModules.coloursHome = {
+{
+  flake.nixosModules.coloursHome = { self, ... }: {
     inherit self;
     imports = [
       self.nixosModules.coloursUser
