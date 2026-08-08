@@ -13,7 +13,6 @@
         gh.enable = true;
         firefox.enable = true;
         kitty.enable = true; # required for the default Hyprland config
-        cowsay.enable = true;
       };
 
       home.stateVersion = "25.05";
