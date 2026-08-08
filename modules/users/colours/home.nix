@@ -1,8 +1,8 @@
 {
   flake.nixosModules.coloursHome = { self, ... }: {
-    #imports = [
-    #  self.nixosModules.coloursUser
-    #];
+    imports = [
+      ./user.nix
+    ];
 
     home-manager.users.colours = {
       home.packages = [ ];
