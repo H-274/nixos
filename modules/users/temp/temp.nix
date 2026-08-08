@@ -1,6 +1,6 @@
 {
   flake.nixosModules.tempUser = { ... }: {
-    users.users.colours = {
+    users.users.temp = {
       isNormalUser = true;
       description = "temp";
       initialPassword = "12345";
