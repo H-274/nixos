@@ -12,7 +12,7 @@
           _args = [
             "hyprland.start"
             (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"${lib.getExe self.${pkgs.stdenv.hostPlatform.system}.packages.noctalia}\")\nend")
-          ]
+          ];
         };
       };
 
