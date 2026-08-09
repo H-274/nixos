@@ -7,12 +7,8 @@
       ];
       wayland.windowManager.hyprlan = {
         enable = true; # enable Hyprland
-        
-        on = {
-          _args = [
-            "hyprland.start"
-            (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"${lib.getExe self.${pkgs.stdenv.hostPlatform.system}.packages.noctalia}\")\nend")
-          ];
+        settings = {
+          exec-once = "${lib.getExe self.${pkgs.stdenv.hostPlatform.system}.packages.noctalia}"
         };
       };
 
