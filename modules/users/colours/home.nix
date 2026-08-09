@@ -8,7 +8,7 @@
       wayland.windowManager.hyprland = {
         enable = true; # enable Hyprland
         settings = {
-          exec-once = "${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}";
+          # exec-once = "${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}";
         };
       };
 
