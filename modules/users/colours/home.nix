@@ -10,10 +10,7 @@
 
         settings = {
           on = {
-            _args = [
-              "hyprland.start"
-              ("function()\n  hl.exec_cmd(\"${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}\")\nend")
-            ];
+              "hyprland.start" = "exec-start ${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}";
           };
         };
       };
