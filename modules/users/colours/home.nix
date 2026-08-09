@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.coloursHome = { self, pkgs, ... }: {
+  flake.nixosModules.coloursHome = { self, lib, pkgs, ... }: {
 
     home-manager.users.colours = {
       home.packages = [
@@ -8,7 +8,7 @@
       wayland.windowManager.hyprlan = {
         enable = true; # enable Hyprland
         settings = {
-          exec-once = "${lib.getExe self.${pkgs.stdenv.hostPlatform.system}.packages.noctalia}"
+          exec-once = "${lib.getExe self.${pkgs.stdenv.hostPlatform.system}.packages.noctalia}";
         };
       };
 
