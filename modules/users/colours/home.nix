@@ -1,5 +1,5 @@
-{
-  flake.nixosModules.coloursHome = { self, lib, pkgs, ... }: {
+{ self, ... }: {
+  flake.nixosModules.coloursHome = { lib, pkgs, ... }: {
 
     home-manager.users.colours = {
       home.packages = [
