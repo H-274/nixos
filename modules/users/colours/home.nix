@@ -6,21 +6,20 @@
         pkgs.cowsay
         pkgs.noctalia-shell
       ];
-      #wayland.windowManager.hyprland = {
-      #  enable = true; # enable Hyprland
-      #  package = null;
-#
-      #  settings = {
-      #    on = [
-      #      {
-      #        _args = [
-      #          "hyprland.start"
-      #          (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"noctalia-shell\")\nend")
-      #        ];
-      #      }
-      #    ];
-      #  };
-      #};
+      wayland.windowManager.hyprland = {
+        enable = true; # enable Hyprland
+
+        settings = {
+          on = [
+            {
+              _args = [
+                "hyprland.start"
+                (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"noctalia\")\nend")
+              ];
+            }
+          ];
+        };
+      };
 
       programs = {
         home-manager.enable = true;
