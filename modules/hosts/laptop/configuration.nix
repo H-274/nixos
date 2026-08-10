@@ -86,10 +86,10 @@
       kitty
     ];
 
-    environment.pathsToLink = [
-      "/share/applications"
-      "/share/xdg-desktop-portal"
-    ];
+    #environment.pathsToLink = [
+    #  "/share/applications"
+    #  "/share/xdg-desktop-portal"
+    #];
 
     system.stateVersion = "26.05";
 
