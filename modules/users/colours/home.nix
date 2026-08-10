@@ -4,6 +4,7 @@
     home-manager.users.colours = {
       home.packages = [
         pkgs.cowsay
+        pkgs.noctalia-shell
       ];
       wayland.windowManager.hyprland = {
         enable = true; # enable Hyprland
@@ -14,7 +15,7 @@
             {
               _args = [
                 "hyprland.start"
-                (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}\")\nend")
+                (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"noctalia-shell\")\nend")
               ];
             }
           ];
