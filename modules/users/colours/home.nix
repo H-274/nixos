@@ -10,12 +10,14 @@
         package = null;
 
         settings = {
-          on = {
-            _args = [
-              "hyprland.start"
-              (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"sleep 2 && ${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}\")\nend")
-            ];
-          };
+          on = [
+            {
+              _args = [
+                "hyprland.start"
+                (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}\")\nend")
+              ];
+            }
+          ];
         };
       };
 
