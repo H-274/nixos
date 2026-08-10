@@ -50,6 +50,7 @@
     };
 
     # X11 window system
+    services.xserver.enable = true;
     services.xserver.xkb = {
       layout = "ca";
       variant = "";
@@ -57,7 +58,6 @@
 
     # Desktop environment
     services.displayManager.sddm.enable = true;
-    services.displayManager.sddm.wayland.enable = true;
     services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
 
