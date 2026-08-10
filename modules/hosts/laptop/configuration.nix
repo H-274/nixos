@@ -7,9 +7,9 @@
       self.nixosModules.laptopHardware
 
       # Users
-      #self.nixosModules.home-manager
-      #self.nixosModules.coloursUser
-      #self.nixosModules.coloursHome
+      self.nixosModules.home-manager
+      self.nixosModules.coloursUser
+      self.nixosModules.coloursHome
       #self.nixosModules.tempUser
       #self.nixosModules.tempHome
 
