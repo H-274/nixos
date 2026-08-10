@@ -15,7 +15,7 @@
 
       # Theming
       self.nixosModules.catppuccin
-      #self.nixosModules.hyprland
+      self.nixosModules.hyprland
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -58,7 +58,7 @@
 
     # Desktop environment
     services.displayManager.gdm.enable = true;
-    services.desktopManager.gnome.enable = true;
+    #services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
 
     # Console keymap
