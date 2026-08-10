@@ -7,7 +7,6 @@
       ];
       wayland.windowManager.hyprland = {
         enable = true; # enable Hyprland
-        configType = "lua";
 
         settings = {
           on = {
@@ -27,7 +26,7 @@
         kitty.enable = true; # required for the default Hyprland config
       };
 
-      home.stateVersion = "25.05";
+      home.stateVersion = "26.05";
     };
   };
 }
