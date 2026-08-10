@@ -11,14 +11,14 @@
         package = null;
 
         settings = {
-          on = [
-            {
-              _args = [
-                "hyprland.start"
-                (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"noctalia-shell\")\nend")
-              ];
-            }
-          ];
+          #on = [
+          #  {
+          #    _args = [
+          #      "hyprland.start"
+          #      (lib.generators.mkLuaInline "function()\n hl.exec_cmd(\"noctalia-shell\")\nend")
+          #    ];
+          #  }
+          #];
         };
       };
 
