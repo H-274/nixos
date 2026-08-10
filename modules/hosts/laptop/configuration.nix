@@ -7,11 +7,11 @@
       self.nixosModules.laptopHardware
 
       # Users
-      self.nixosModules.home-manager
-      self.nixosModules.coloursUser
-      self.nixosModules.coloursHome
-      self.nixosModules.tempUser
-      self.nixosModules.tempHome
+      #self.nixosModules.home-manager
+      #self.nixosModules.coloursUser
+      #self.nixosModules.coloursHome
+      #self.nixosModules.tempUser
+      #self.nixosModules.tempHome
 
       # Theming
       self.nixosModules.catppuccin
@@ -58,7 +58,7 @@
 
     # Desktop environment
     services.displayManager.sddm.enable = true;
-    #services.desktopManager.gnome.enable = true;
+    services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
 
     # Console keymap
