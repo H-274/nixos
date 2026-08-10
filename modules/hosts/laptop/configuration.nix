@@ -58,6 +58,7 @@
     # Desktop environment
     services.displayManager.sddm.enable = true;
     services.displayManager.sddm.wayland.enable = true;
+    services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
 
     # Console keymap
