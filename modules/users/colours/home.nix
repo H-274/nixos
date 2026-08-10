@@ -4,7 +4,6 @@
     home-manager.users.colours = {
       home.packages = [
         pkgs.cowsay
-        pkgs.noctalia-shell
       ];
       wayland.windowManager.hyprland = {
         enable = true; # enable Hyprland

@@ -10,8 +10,6 @@
       self.nixosModules.home-manager
       self.nixosModules.coloursUser
       self.nixosModules.coloursHome
-      #self.nixosModules.tempUser
-      #self.nixosModules.tempHome
 
       # Theming
       self.nixosModules.catppuccin
