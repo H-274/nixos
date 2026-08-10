@@ -58,13 +58,7 @@
     services.displayManager.gdm.enable = true;
     #services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
-    xdg.portal.config={
-      common = {
-        default = [
-          "gtk"
-        ];
-      };
-    };
+    xdg.portal.config.common.default="*";
 
     # Console keymap
     console.keyMap = "cf";
