@@ -57,7 +57,7 @@
     };
 
     # Desktop environment
-    services.displayManager.sddm.enable = true;
+    services.displayManager.gdm.enable = true;
     services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
 
