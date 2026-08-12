@@ -7,7 +7,7 @@
     environment.systemPackages = with pkgs; [
       qt5.qtwayland
       qt6.qtwayland
-      qt6ct
+      qt6Packages.qt6ct
       wayland-utils
       wayland-protocols
       glib
