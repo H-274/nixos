@@ -5,8 +5,8 @@
     ];
 
     environment.systemPackages = with pkgs; [
-      qt5.hyprland
-      qt6.hyprland
+      qt5.qtwayland
+      qt6.qtwayland
       qt6ct
       wayland-utils
       wayland-protocols
