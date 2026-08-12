@@ -17,7 +17,7 @@
 
     programs.hyprland = { 
       enable = true;
-      override { # or inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
+      override = {
         enableXWayland = true;  # whether to enable XWayland
         withSystemd = true;     # whether to build with systemd support
       };
