@@ -7,12 +7,11 @@
       self.nixosModules.laptopHardware
 
       # Users
-      self.nixosModules.home-manager
       self.nixosModules.coloursUser
-      self.nixosModules.coloursHome
 
-      # Theming
+      # Other
       self.nixosModules.catppuccin
+      self.nixosModules.shell
       self.nixosModules.hyprland
     ];
 
@@ -83,7 +82,6 @@
     environment.systemPackages = with pkgs; [
       git
       github-cli
-      kitty
     ];
 
     system.stateVersion = "26.05";
