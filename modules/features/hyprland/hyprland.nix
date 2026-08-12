@@ -4,6 +4,11 @@
       inputs.hyprland.nixosModules.default
     ];
 
+    (pkgs.hyprland.override { # or inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
+      enableXWayland = true;  # whether to enable XWayland
+      withSystemd = false;     # whether to build with systemd support
+    })
+
     environment.systemPackages = with pkgs; [
       qt5.qtwayland
       qt6.qtwayland
@@ -17,7 +22,6 @@
 
     programs.hyprland = { 
       enable = true;
-      withUWSM = true;
 
       plugins = [ ];
 
