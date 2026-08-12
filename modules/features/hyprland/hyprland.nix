@@ -5,6 +5,10 @@
     ];
 
     environment.systemPackages = with pkgs; [
+      (pkgs.hyprland.override { # or inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
+        enableXWayland = true;  # whether to enable XWayland
+        withSystemd = true;     # whether to build with systemd support
+      })
       qt5.qtwayland
       qt6.qtwayland
       qt6Packages.qt6ct
@@ -17,10 +21,6 @@
 
     programs.hyprland = { 
       enable = true;
-      override = {
-        enableXWayland = true;  # whether to enable XWayland
-        withSystemd = true;     # whether to build with systemd support
-      };
 
       plugins = [ ];
 
