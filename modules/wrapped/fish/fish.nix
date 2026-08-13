@@ -2,6 +2,7 @@
   flake.nixosModules.fish = { pkgs, lib, ... }: {
     environment.systemPackages = [
       self.packages.${pkgs.stdenv.hostPlatform.system}.fish
+      self.packages.${pkgs.stdenv.hostPlatform.system}.oh-my-posh
     ];
   };
 
