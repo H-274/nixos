@@ -9,9 +9,7 @@
     packages.zsh = inputs.wrapper-modules.wrappers.zsh.wrap {
       inherit pkgs;
 
-      zshrc = {
-        "config" = ./config.zshrc;
-      };
+      zshrc.path = ./config.zshrc;
     };
   };
 }
