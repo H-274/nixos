@@ -9,6 +9,7 @@
     packages.fish = inputs.wrapper-modules.wrappers.fish.wrap {
       inherit pkgs;
 
+      # TODO find out why broken configFile.path = config.fish;
       configFile.content = ''oh-my-posh init fish | source'';
     };
   };
