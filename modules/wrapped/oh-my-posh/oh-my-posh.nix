@@ -7,17 +7,10 @@
   };
 
   perSystem = { pkgs, ... }: {
-    packages.kitty = inputs.wrapper-modules.wrappers.kitty.wrap {
+    packages.oh-my-posh = inputs.wrapper-modules.wrappers.oh-my-posh.wrap {
       inherit pkgs;
 
-      settings = {
-        scrollback_lines = 10000;
-        enable_audio_bell = false;
-        update_check_interval = 0;
-      };
-
       configFile = ./zen.toml;
-      themeFile = "Catppuccin-Mocha";
     };
   };
 }

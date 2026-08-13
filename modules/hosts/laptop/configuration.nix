@@ -12,6 +12,7 @@
       # Other
       self.nixosModules.hyprland
       self.nixosModules.oh-my-posh
+      self.nixosModules.kitty
       self.nixosModules.zsh
     ];
 
