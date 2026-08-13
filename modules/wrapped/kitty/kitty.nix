@@ -1,9 +1,9 @@
 { self, inputs, ... }: {
   flake.nixosModules.kitty = { pkgs, lib, ... }: {
-    programs.kitty = {
+    #programs.kitty = {
       # enable = true;
-      package = self.packages.${pkgs.stdenv.hostPlatform.system}.kitty;
-    };
+      self.packages.${pkgs.stdenv.hostPlatform.system}.kitty;
+    #};
   };
 
   perSystem = { pkgs, ... }: {
