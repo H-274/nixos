@@ -1,10 +1,11 @@
 {
-  flake.nixosModules.coloursUser = { ... }: {
+  flake.nixosModules.coloursUser = { self, pkgs, ... }: {
     users.users.colours = {
       isNormalUser = true;
       description = "colours";
       initialPassword = "12345";
       extraGroups = [ "networkmanager" "wheel" ];
+      shell = self.packages.${pkgs.stdenv.hostPlatform.system}.fish;
     };
   };
 }
