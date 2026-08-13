@@ -11,8 +11,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
-
-    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake

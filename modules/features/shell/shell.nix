@@ -9,6 +9,7 @@
     programs = {
       zsh.enable = true;
       zsh.promptInit = ''eval "$(oh-my-posh init zsh --config ${./oh-my-posh.toml})"'';
+      kitty.themeFile = "Catppuccin-Mocha";
     };
   };
 }

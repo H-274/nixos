@@ -10,7 +10,6 @@
       self.nixosModules.coloursUser
 
       # Other
-      self.nixosModules.catppuccin
       self.nixosModules.shell
       self.nixosModules.hyprland
     ];
