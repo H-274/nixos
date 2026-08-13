@@ -3,6 +3,11 @@
     environment.systemPackages = [
       self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
     ];
+
+    fonts.packages = with pkgs; [
+      nerd-fonts.fira-code
+      nerd-fonts.atkynson-mono
+    ];
   };
 
   perSystem = { pkgs, ... }: {
@@ -14,6 +19,8 @@
         enable_audio_bell = false;
         update_check_interval = 0;
       };
+
+      font = "atkynson-mono";
 
       themeFile = "Catppuccin-Mocha";
     };
