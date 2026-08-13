@@ -20,7 +20,7 @@
         update_check_interval = 0;
       };
 
-      font = "atkynson-mono";
+      font.name = "atkynson-mono";
 
       themeFile = "Catppuccin-Mocha";
     };
