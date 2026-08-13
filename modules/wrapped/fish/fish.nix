@@ -9,7 +9,7 @@
     packages.fish = inputs.wrapper-modules.wrappers.fish.wrap {
       inherit pkgs;
 
-      configFile.path = ./config.fish;
+      configFile.content = ''oh-my-posh init fish | source'';
     };
   };
 }
