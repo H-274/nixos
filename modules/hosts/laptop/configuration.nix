@@ -10,8 +10,9 @@
       self.nixosModules.coloursUser
 
       # Other
-      self.nixosModules.shell
       self.nixosModules.hyprland
+      self.nixosModules.oh-my-posh
+      self.nixosModules.zsh
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -81,6 +82,7 @@
     environment.systemPackages = with pkgs; [
       git
       github-cli
+      kitty
     ];
 
     system.stateVersion = "26.05";
