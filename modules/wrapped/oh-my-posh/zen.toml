@@ -69,7 +69,6 @@ foreground_templates = [
 ]
 background = "transparent"
 template = "❯ "
-right_template = "{{ if .Root }}<p:red>{{ else }}<p:green>{{ end }}{{ .UserName }}@{{ .HostName }}</>"
 
 [secondary_prompt]
 foreground_templates = [
