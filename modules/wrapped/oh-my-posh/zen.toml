@@ -71,12 +71,12 @@ foreground_templates = [
     "{{if eq .Code 0}}p:mauve{{end}}",
 ]
 background = "transparent"
-template = " ❯ "
+template = "❯ "
 
 [secondary_prompt]
 foreground = "p:mauve"
 background = "transparent"
-template = " ❯❯ "
+template = "❯❯ "
 
 [palette]
 rosewater = "#f5e0dc"
