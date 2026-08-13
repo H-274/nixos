@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosModules.zsh = { pkgs, lib, ... }: {
+  flake.nixosModules.fish = { pkgs, lib, ... }: {
     environment.systemPackages = [
       self.packages.${pkgs.stdenv.hostPlatform.system}.fish
     ];
