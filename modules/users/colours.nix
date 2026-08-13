@@ -1,5 +1,5 @@
-{
-  flake.nixosModules.coloursUser = { self, pkgs, ... }: {
+{ self, pkgs, ... }: {
+  flake.nixosModules.coloursUser = {
     users.users.colours = {
       isNormalUser = true;
       description = "colours";
