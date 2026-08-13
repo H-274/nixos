@@ -6,7 +6,7 @@
   };
 
   perSystem = { pkgs, ... }: {
-    packages.kitty = inputs.wrapper-modules.wrappers.zsh.wrap {
+    packages.zsh = inputs.wrapper-modules.wrappers.zsh.wrap {
       inherit pkgs;
 
       zshrc = {
