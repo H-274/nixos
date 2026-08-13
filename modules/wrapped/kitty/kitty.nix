@@ -2,7 +2,7 @@
   flake.nixosModules.kitty = { pkgs, lib, ... }: {
     #programs.kitty = {
       # enable = true;
-      self.packages.${pkgs.stdenv.hostPlatform.system}.kitty;
+      pkgs.kitty = self.packages.${pkgs.stdenv.hostPlatform.system}.kitty;
     #};
   };
 
