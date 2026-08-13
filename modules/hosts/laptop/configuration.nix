@@ -13,7 +13,7 @@
       self.nixosModules.hyprland
       self.nixosModules.oh-my-posh
       self.nixosModules.kitty
-      self.nixosModules.zsh
+      self.nixosModules.fish
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];

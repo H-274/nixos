@@ -1,15 +1,15 @@
 { self, inputs, ... }: {
   flake.nixosModules.zsh = { pkgs, lib, ... }: {
     environment.systemPackages = [
-      self.packages.${pkgs.stdenv.hostPlatform.system}.zsh
+      self.packages.${pkgs.stdenv.hostPlatform.system}.fish
     ];
   };
 
   perSystem = { pkgs, ... }: {
-    packages.zsh = inputs.wrapper-modules.wrappers.zsh.wrap {
+    packages.fish = inputs.wrapper-modules.wrappers.fish.wrap {
       inherit pkgs;
 
-      zshrc.path = ./config.zshrc;
+      configFile.path = ./config.fish;
     };
   };
 }
