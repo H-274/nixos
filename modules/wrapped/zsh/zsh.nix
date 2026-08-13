@@ -1,9 +1,8 @@
 { self, inputs, ... }: {
   flake.nixosModules.zsh = { pkgs, lib, ... }: {
-    programs.zsh = {
-      enable = true;
-      package = self.packages.${pkgs.stdenv.hostPlatform.system}.zsh;
-    };
+    environment.systemPackages = [
+      self.packages.${pkgs.stdenv.hostPlatform.system}.zsh
+    ];
   };
 
   perSystem = { pkgs, ... }: {
