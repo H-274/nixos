@@ -8,7 +8,7 @@
 
     programs = {
       zsh.enable = true;
-      zsh.promptInit = "eval \"$(oh-my-posh init zsh --config ${./oh-my-posh.toml}\")";
+      zsh.promptInit = ''eval "$(oh-my-posh init zsh --config ${./oh-my-posh.toml}")'';
     };
   };
 }
