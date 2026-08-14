@@ -26,7 +26,7 @@
 
       # settings = { };
 
-      extraConfig = builtins.split "\n" builtins.readFile ./hyprland.lua;
+      extraConfig = builtins.split "\n" (builtins.readFile ./hyprland.lua);
     };
   };
 }
