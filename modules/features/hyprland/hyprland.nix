@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.hyprland = { pkgs, ... }: {
+  flake.nixosModules.hyprland = { lib, pkgs, ... }: {
     imports = [
       inputs.hyprland.nixosModules.default
     ];
@@ -24,7 +24,9 @@
 
       plugins = [ ];
 
-      settings = { };
+      # settings = { };
+
+      extraConfig = builtins.split "\n" builtins.readFile ./hyprland.lua;
     };
   };
 }
