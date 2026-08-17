@@ -1,9 +1,13 @@
 { lib, config, ... }: {
   flake.nixosModules.plasma = {
-    options.desktop.plasma.enable = lib.mkEnableOption "Enable Plasma desktop";
+    let
+      cfg = config.desktop.plasma;
+    in {
+      options.desktop.plasma.enable = lib.mkEnableOption "Enable Plasma desktop";
 
-    config = {
-      services.desktopManager.plasma6.enable = lib.mkIf config.desktop.plasma.enable;
+      config = lib.mkIf config.desktop.plasma.enable {
+        services.desktopManager.plasma6.enable = true;
+      };
     };
   };
 }
