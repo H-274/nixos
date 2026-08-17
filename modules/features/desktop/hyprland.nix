@@ -1,7 +1,7 @@
 { lib, ... }: {
-  hyprland.enable = lib.mkEnableOption;
+  options.desktop.hyprland.enable = lib.mkEnableOption;
 
-  config = lib.mkIf hyprland.enable {
+  config = lib.mkIf options.desktop.hyprland.enable {
     # todo
   };
 }
