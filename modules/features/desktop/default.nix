@@ -1,10 +1,6 @@
 {
-  imports = [
-      ./plasma.nix
-      ./hyprland.nix
-    ];
+  flake.nixosModules.desktop = {
 
-  config = {
     boot.loader.systemd-boot.enable = true;
     services.displayManager.sddm.enable = true;
 
