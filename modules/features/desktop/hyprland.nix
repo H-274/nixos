@@ -3,5 +3,5 @@
 
   config = lib.mkIf hyprland.enable {
     # todo
-  }
+  };
 }
