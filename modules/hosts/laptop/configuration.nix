@@ -10,18 +10,12 @@
       self.nixosModules.coloursUser
 
       # Other
-      self.nixosModules.hyprland
+      self.nixosModules.desktop
       self.nixosModules.kitty
       self.nixosModules.fish
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  
-    # Bootloader
-    boot.loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
 
     # Networking
     networking.hostName = "laptop";
@@ -46,18 +40,9 @@
       LC_TIME = "en_CA.UTF-8";
     };
 
-    # X11 window system
-    services.xserver.enable = true;
-    services.xserver.xkb = {
-      layout = "ca";
-      variant = "";
-    };
+    
 
-    # Desktop environment
-    services.displayManager.gdm.enable = true;
-    #services.desktopManager.gnome.enable = true;
     services.libinput.enable = true;
-    xdg.portal.config.common.default="*";
 
     # Console keymap
     console.keyMap = "cf";
@@ -82,7 +67,6 @@
     environment.systemPackages = with pkgs; [
       git
       github-cli
-      kitty
     ];
 
     system.stateVersion = "26.05";
