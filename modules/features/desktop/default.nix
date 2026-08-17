@@ -1,5 +1,8 @@
 {
-  flake.nixosModules.desktop = {
+  flake.nixosModules.desktop = { self, ... }: {
+    imports = [
+      self.nixosModules.plasma
+    ];
 
     boot.loader.systemd-boot.enable = true;
     services.displayManager.sddm.enable = true;
