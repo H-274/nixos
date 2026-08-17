@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ lib, config, ... }: {
   options.desktop.hyprland.enable = lib.mkEnableOption;
 
   config = lib.mkIf config.desktop.hyprland.enable {
