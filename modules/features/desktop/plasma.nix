@@ -3,5 +3,5 @@
 
   config = lib.mkIf config.desktop.plasma.enable {
     services.desktopManager.plasma6.enable = true;
-  }
+  };
 }
