@@ -16,6 +16,9 @@
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
+    
+    # Desktop config
+    plasma.enable = true;
 
     # Networking
     networking.hostName = "laptop";
