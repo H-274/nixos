@@ -10,7 +10,7 @@
       self.nixosModules.coloursUser
 
       # Other
-      self.nixosModules.desktop
+      ../../features/desktop/default.nix
       self.nixosModules.kitty
       self.nixosModules.fish
     ];
