@@ -1,4 +1,4 @@
-{ lib, config, ... }: {
+{ lib, config, services, ... }: {
   options.desktop.plasma.enable = lib.mkEnableOption;
 
   config = lib.mkIf config.desktop.plasma.enable {
