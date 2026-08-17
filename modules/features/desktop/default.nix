@@ -1,6 +1,6 @@
 {
   flake.nixosModules.desktop = {
-    include = [
+    imports = [
       ./plasma.nix
       ./hyprland.nix
     ];
