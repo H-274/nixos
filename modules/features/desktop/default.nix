@@ -1,5 +1,5 @@
-{
-  flake.nixosModules.desktop = { self, lib, ... }:  {
+{ self,  ... }: {
+  flake.nixosModules.desktop = { lib, ... }:  {
     include = [
       ./plasma.nix
       ./hyprland.nix
