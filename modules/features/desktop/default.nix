@@ -1,16 +1,16 @@
 {
-  flake.nixosModules.desktop = { lib, config, ... }:  {
+  flake.nixosModules.desktop = {
     include = [
       ./plasma.nix
       ./hyprland.nix
     ];
 
     boot.loader.systemd-boot.enable = true;
-    config.services.displayManager.sddm.enable = true;
+    services.displayManager.sddm.enable = true;
 
     # X11 window system
-    config.services.xserver.enable = true;
-    config.services.xserver.xkb = {
+    services.xserver.enable = true;
+    services.xserver.xkb = {
       layout = "ca";
       variant = "";
     };
