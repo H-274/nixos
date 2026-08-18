@@ -1,7 +1,7 @@
 {
   flake.nixosModules.desktop = { self, ... }: {
     imports = [
-      ./plasma.nix
+      self.nixosModules.plasma
     ];
 
     config = {
