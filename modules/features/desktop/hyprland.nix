@@ -8,7 +8,7 @@
       enable = true;
       configType = "lua";
 
-      extraConfig = readFile ./hyprland.lua;
+      extraConfig = builtins.readFile ./hyprland.lua;
     };
   };
 }
