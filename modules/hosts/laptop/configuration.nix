@@ -8,8 +8,8 @@
       self.nixosModules.laptopHardware
 
       # Desktop config
+      self.nixosModules.desktop
       self.nixosModules.plasma
-      self.nixosModules.hyprland
 
       # Users
       self.nixosModules.coloursUser

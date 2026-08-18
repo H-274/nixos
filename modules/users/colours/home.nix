@@ -6,7 +6,9 @@
     ];
     
     home-manager.users.colours = {
-
+      imports = [
+        self.nixosModules.hyprland
+      ];
     };
   };
 }
