@@ -12,7 +12,7 @@
       self.nixosModules.plasma
 
       # Users
-      self.nixosModules.coloursUser
+      self.nixosModules.coloursHome
 
       # Other
       self.nixosModules.kitty
