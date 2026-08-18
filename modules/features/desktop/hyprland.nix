@@ -5,7 +5,7 @@
     ];
     
     wayland.windowManager.hyprland = {
-      enable = true;;
+      enable = true;
       configType = "lua";
 
       extraConfig = readFile ./hyprland.lua;
