@@ -9,6 +9,8 @@
       imports = [
         self.nixosModules.hyprland
       ];
+
+      stateVersion = "26.05";
     };
   };
 }
