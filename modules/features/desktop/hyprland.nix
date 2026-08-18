@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.hyprland = { self, ... }: {
+  flake.nixosModules.hyprland = {
     
   };
 }
