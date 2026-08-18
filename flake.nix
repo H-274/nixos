@@ -8,6 +8,10 @@
     wrappers.url = "github:Lassulus/wrappers";
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      follows = "nixpkgs";
+    };
     hyprland.url = "github:hyprwm/Hyprland";
   };
 
