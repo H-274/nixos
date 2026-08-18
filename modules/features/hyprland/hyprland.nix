@@ -1,6 +1,6 @@
 { self, ... }: {
   flake.nixosModules.hyprland = {  
-    wayland.windowManager.hyprland = {
+    home.wayland.windowManager.hyprland = {
       enable = true;
       configType = "lua";
 
