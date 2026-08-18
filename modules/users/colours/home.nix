@@ -7,6 +7,6 @@
     
     home-manager.users.colours = {
 
-    }
+    };
   };
 }
