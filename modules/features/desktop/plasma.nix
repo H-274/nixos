@@ -1,4 +1,4 @@
-{ lib, config, ... }: {
+{ lib, config, ... }: let in {
   flake.nixosModules.plasma = { lib, config, ... }: let
     cfg = config.desktop.plasma;
   in {
