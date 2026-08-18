@@ -8,8 +8,8 @@
   perSystem = { pkgs, ... }: {
     packages.fish = inputs.wrapper-modules.wrappers.fish.wrap {
       inherit pkgs;
-      
-      configFile.content = ''${self.packages.${pkgs.stdenv.hostPlatform.system}.oh-my-posh} init fish | source'';
+
+      configFile.content = ''${self.packages.${pkgs.stdenv.hostPlatform.system}.oh-my-posh}/bin/oh-my-posh init fish | source'';
     };
   };
 }
