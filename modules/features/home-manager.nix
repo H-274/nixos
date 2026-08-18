@@ -1,4 +1,4 @@
-{
+{ inputs, ... }: {
   flake.nixosModules.home-manager = {
     home-manager = {
       useGlobalPkgs = true;
