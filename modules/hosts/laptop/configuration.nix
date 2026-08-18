@@ -6,19 +6,19 @@
       # Hardware config
       self.nixosModules.laptopHardware
 
+      # Desktop config
+      self.nixosModules.desktop
+      self.nixosModules.plasma
+
       # Users
       self.nixosModules.coloursUser
 
       # Other
-      self.nixosModules.desktop
       self.nixosModules.kitty
       self.nixosModules.fish
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
-    
-    # Desktop config
-    desktop.plasma.enable = true;
 
     # Networking
     networking.hostName = "laptop";
