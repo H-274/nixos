@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.desktop = { self, ... }: {
+  flake.nixosModules.desktop = {
     boot.loader.systemd-boot.enable = true;
     services.displayManager.sddm.enable = true;
 

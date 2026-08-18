@@ -9,6 +9,7 @@
       # Desktop config
       self.nixosModules.desktop
       self.nixosModules.plasma
+      self.nixosModules.hyprland
 
       # Users
       self.nixosModules.coloursUser
@@ -42,8 +43,6 @@
       LC_TELEPHONE = "en_CA.UTF-8";
       LC_TIME = "en_CA.UTF-8";
     };
-
-    
 
     services.libinput.enable = true;
 
