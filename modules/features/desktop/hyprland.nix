@@ -4,7 +4,7 @@
       self.nixosModules.home-manager
     ];
     
-    wayland.windowManager.hyprland = {
+    home-manager.wayland.windowManager.hyprland = {
       enable = true;
       configType = "lua";
 
