@@ -8,8 +8,6 @@
       useGlobalPkgs = true;
       useUserPackages = true;
       extraSpecialArgs = { inherit inputs; };
-
-      programs.home-manager.enable = true;
     };
   };
 }
