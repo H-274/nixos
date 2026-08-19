@@ -4,13 +4,13 @@
       self.nixosModules.kitty
     ];
 
-    environment.systemPackages = [
-      pkgs.waybar
-      (pkgs.waybar.overrideAttrs (oldAttrs: {
+    environment.systemPackages = with pkgs; [
+      waybar
+      (waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       }))
 
-      pkgs.dunst
+      dunst
       libnotify
 
       swww
