@@ -1,6 +1,6 @@
 {
   flake.nixosModules.hyprland = { self, pkgs, ... }: {
-    imports = [
+    modules = [
       self.nixosModules.kitty
     ];
 
