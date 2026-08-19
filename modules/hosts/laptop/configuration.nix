@@ -2,7 +2,6 @@
   flake.nixosModules.laptopConfig = { pkgs, lib, ... }: {
     imports = [
       self.nixosModules.base
-      self.nixosModules.home-manager
 
       # Hardware config
       self.nixosModules.laptopHardware
@@ -10,12 +9,13 @@
       # Desktop config
       self.nixosModules.desktop
       self.nixosModules.plasma
+      self.nixosModules.hyprland
 
       # Users
-      self.nixosModules.coloursHome
+      self.nixosModules.coloursUser
 
       # Other
-      self.nixosModules.kitty
+      # self.nixosModules.kitty
       self.nixosModules.fish
     ];
 
