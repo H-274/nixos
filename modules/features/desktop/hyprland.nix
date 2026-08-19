@@ -13,7 +13,7 @@
       dunst
       libnotify
 
-      swww
+      awww
       kitty
 
       rofi
