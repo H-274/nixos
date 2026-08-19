@@ -2,7 +2,7 @@
   flake.nixosModules.hyprland = {
     imports = [
       self.nixosModules.kitty
-    ]
+    ];
 
     environment.systemPackages = [
       pkgs.waybar
