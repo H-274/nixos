@@ -16,7 +16,7 @@
       swww
       kitty
 
-      rofi-wayland
+      rofi
     ];
 
     programs.hyprland = {
