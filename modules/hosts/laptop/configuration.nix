@@ -69,6 +69,7 @@
     environment.systemPackages = with pkgs; [
       git
       github-cli
+      firefox
     ];
 
     system.stateVersion = "26.05";
