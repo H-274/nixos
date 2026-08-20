@@ -2,20 +2,17 @@
   flake.nixosModules.laptopConfig = { pkgs, lib, ... }: {
     imports = [
       self.nixosModules.base
+      self.nixosModules.home-manager
 
+      self.nixosModules.desktop
+      
       # Hardware config
       self.nixosModules.laptopHardware
 
-      # Desktop config
-      self.nixosModules.desktop
-      self.nixosModules.plasma
-      self.nixosModules.hyprland
-
       # Users
-      self.nixosModules.coloursUser
+      self.nixosModules.coloursLaptop
 
       # Other
-      # self.nixosModules.kitty
       self.nixosModules.fish
     ];
 
@@ -73,7 +70,6 @@
     ];
 
     system.stateVersion = "26.05";
-
   };
 
 }
