@@ -5,6 +5,10 @@
     ];
 
     home-manager.users.colours = {
+      imports = [
+
+      ];
+      
       home.stateVersion = "26.05";
     };
   };

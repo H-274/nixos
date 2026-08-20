@@ -11,9 +11,6 @@
 
       # Users
       self.nixosModules.coloursLaptop
-
-      # Other
-      self.nixosModules.fish
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
