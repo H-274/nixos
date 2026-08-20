@@ -5,7 +5,7 @@
     ];
 
     home-manager.useGlobalPkgs = true;
-    home-manager.useUserPkgs = true;
+    home-manager.useUserPackages = true;
     home-manager.extraSpecialArgs = { inherit inputs; };
   };
 }
