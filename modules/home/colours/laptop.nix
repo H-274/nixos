@@ -6,6 +6,6 @@
 
     home-manager.users.colours = {
       home.stateVersion = "26.05";
-    }
+    };
   };
 }
