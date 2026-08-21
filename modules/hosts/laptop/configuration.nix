@@ -5,6 +5,7 @@
       self.nixosModules.home-manager
 
       self.nixosModules.desktop
+      self.nixosModules.hyprland
       
       # Hardware config
       self.nixosModules.laptopHardware
