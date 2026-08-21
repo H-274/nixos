@@ -5,6 +5,9 @@
     ];
 
     home-manager.users.colours = {
+
+      programs.home-manager.enable =  true;
+      
       home.stateVersion = "26.05";
     };
   };
