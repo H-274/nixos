@@ -1,7 +1,5 @@
 <h1 align="center">H-274/nixos</h1>
 
-# My nixos!
-
 This is the little repo I'm using to experiment and configure nixos. I'm using [flakes](https://nixos.wiki/wiki/Flakes) and 
 [flake-parts](https://github.com/hercules-ci/flake-parts). This repo is initially based on this [tutorial](https://www.vimjoyer.com/vid79-parts-wrapped) 
 from [vimjoyer](https://www.vimjoyer.com) (though I have deviated a fair bit). I've also had inspiration from [vimjoyer/nixconf](https://github.com/vimjoyer/nixconf) (notably the wrapped directory), [Sascha Koenig](https://www.youtube.com/@m3tam3re)'s youtube series on Nix, and [fufexan/dotfiles](https://github.com/fufexan/dotfiles).
