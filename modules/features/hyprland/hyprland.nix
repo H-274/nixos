@@ -1,8 +1,7 @@
 # From https://github.com/fufexan/dotfiles/blob/main/system/programs/hyprland/default.nix
 
-{
+{ self, ... }: {
   flake.nixosModules.hyprland = {
-    self,
     inputs,
     pkgs,
     lib,
