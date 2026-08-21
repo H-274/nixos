@@ -2,6 +2,7 @@
 
 {
   flake.nixosModules.hyprland = {
+    self,
     inputs,
     pkgs,
     lib,
