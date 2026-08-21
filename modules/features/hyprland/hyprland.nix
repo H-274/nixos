@@ -46,7 +46,7 @@
           #./binds.lua
           ./hyprland.lua
           #./rules.lua
-          #./settings.lua
+          ./settings.lua
           #./smartgaps.lua
         ];
       in

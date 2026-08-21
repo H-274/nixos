@@ -1,13 +1,13 @@
 # From https://github.com/fufexan/dotfiles/blob/main/system/programs/hyprland/variables.nix
 
 {
-  flake.nixosModules.hyprland-variables = {
-    config,
+  config,
     pkgs,
     lib,
     ...
-  }:
-  {
+}:
+{
+  flake.nixosModules.hyprland-variables = {
 
     environment.etc."xdg/hypr/variables.lua".text = ''
       cursorName = "Bibata-Modern-Classic-Hyprcursor"
