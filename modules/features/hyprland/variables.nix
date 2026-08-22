@@ -27,8 +27,6 @@
       text_color_inactive = "rgba(ffffff66)"
       group_active_color = "rgba(ffffff66)"
       group_inactive_color = "rgba(00000066)"
-
-      screencopy_perms = {"${config.programs.hyprland.portalPackage}/libexec/.xdg-desktop-portal-hyprland-wrapped", "${lib.getExe pkgs.grim}", "${lib.getExe pkgs.wl-screenrec}"}
     '';
   };
 }
