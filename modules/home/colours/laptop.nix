@@ -6,7 +6,7 @@
 
     home-manager.users.colours = {
       imports = [
-        self.homeManagerModules.home-wayland
+        self.homeManagerModules.wayland
       ];
       
       programs.home-manager.enable =  true;

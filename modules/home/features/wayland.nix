@@ -1,6 +1,6 @@
 # Taken from https://github.com/fufexan/dotfiles/blob/main/home/programs/wayland/default.nix
 {
-  flake.nixosModules.home-wayland = {
+  flake.homeManagerModules.wayland = {
     pkgs,
     self,
     lib,
