@@ -1,12 +1,14 @@
 # From https://github.com/fufexan/dotfiles/blob/main/system/programs/hyprland/default.nix
 
-{ self, ... }: {
+{ 
+  self,
+  inputs,
+  pkgs,
+  lib,
+  ...
+}:
+{
   flake.nixosModules.hyprland = {
-    inputs,
-    pkgs,
-    lib,
-    ...
-  }:
   let
     inherit (pkgs.stdenv.hostPlatform) system;
   in
