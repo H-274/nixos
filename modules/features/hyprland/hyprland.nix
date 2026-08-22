@@ -45,7 +45,7 @@
       let
         lua = [
           #./animations.lua
-          #./binds.lua
+          ./binds.lua
           ./hyprland.lua
           #./rules.lua
           ./settings.lua
