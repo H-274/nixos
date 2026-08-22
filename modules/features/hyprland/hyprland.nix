@@ -8,7 +8,7 @@
   ...
 }:
 {
-  flake.nixosModules.hyprland = { }:
+  flake.nixosModules.hyprland = { ... }:
   let
     inherit (pkgs.stdenv.hostPlatform) system;
   in
