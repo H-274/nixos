@@ -15,6 +15,7 @@ hl.env("GRIMBLAST_NO_CURSOR", "0")
 hl.on("hyprland.start", function()
 	-- hl.exec_cmd("hyprctl setcursor " .. cursorName .. " " .. cursorSize)
 	-- hl.exec_cmd("hyprlock")
+	hl.exec_cmd("konsole")
 end)
 
 --------------------------
